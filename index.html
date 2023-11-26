@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: skyblue;
+            height: 100vh;
+        }
+        .keyboard{
+            padding:2%;
+            display: grid;
+            width: 80%;
+            gap: 20px;
+            justify-content: center;
+            grid-template-columns: repeat(12,1fr);
+            background-color: darkslategray;
+            color: skyblue;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .keyboard div{
+            padding: 10px 0px 10px 0px;
+            background-color: slategray;
+            border-radius: 10px;
+        }
+        .enter{
+            grid-area: 3/11/3/span 2;
+        }
+        .shift{
+            grid-area: 4/11/4/span 2;
+        }
+        .space{
+            grid-area: 5/5/5/span 4;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="keyboard">
+            <div>~</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>0</div>
+            <div>Delete</div>
+            <div>tab</div>
+            <div>Q</div>
+            <div>W</div>
+            <div>E</div>
+            <div>R</div>
+            <div>T</div>
+            <div>Y</div>
+            <div>U</div>
+            <div>I</div>
+            <div>O</div>
+            <div>P</div>
+            <div>\</div>
+            <div>CAPS</div>
+            <div>A</div>
+            <div>S</div>
+            <div>D</div>
+            <div>F</div>
+            <div>G</div>
+            <div>H</div>
+            <div>J</div>
+            <div>K</div>
+            <div>L</div>
+            <div class="enter">ENTER</div>
+            <div>SHIFT</div>
+            <div>Z</div>
+            <div>X</div>
+            <div>C</div>
+            <div>V</div>
+            <div>B</div>
+            <div>N</div>
+            <div>M</div>
+            <div><</div>
+            <div>></div>
+            <div class="shift">SHIFT</div>
+            <div>🌐</div>
+            <div>CTRL</div>
+            <div>OPT</div>
+            <div>ALT</div>
+            <div class="space">SPACE</div>
+            <div>ALT</div>
+            <div>OPTION</div>
+            <div>←</div>
+            <div>→</div>
+        </div>
+    </section>
+</body>
+</html>
